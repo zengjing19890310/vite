@@ -115,7 +115,7 @@
     "sirv": "^1.0.17",
     "source-map": "^0.6.1",
     "source-map-support": "^0.5.19",
-    "strip-ansi": "^6.0.0",
+    "strip-ansi": "^7.0.1",
     "strip-bom": "^4.0.0",
     "strip-json-comments": "^3.1.1",
     "terser": "^5.7.1",

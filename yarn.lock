@@ -1659,6 +1659,11 @@ ansi-regex@^5.0.0:
   resolved "https://registry.yarnpkg.com/ansi-regex/-/ansi-regex-5.0.0.tgz#388539f55179bf39339c81af30a654d69f87cb75"
   integrity sha512-bY6fj56OUQ0hU1KjFNDQuJFezqKdrAyFdIevADiqrWHwSlbmBNMHp5ak2f40Pm8JTFyM2mqxkG6ngkHO11f/lg==
 
+ansi-regex@^6.0.1:
+  version "6.0.1"
+  resolved "https://registry.yarnpkg.com/ansi-regex/-/ansi-regex-6.0.1.tgz#3183e38fae9a65d7cb5e53945cd5897d0260a06a"
+  integrity sha512-n5M855fKb2SsfMIiFFoVrABHJC8QtHwVx+mHWP3QcEqBHYienj5dHSgjbxtC0WEZXYt4wcD6zrQElDPhFuZgfA==
+
 ansi-styles@^3.2.1:
   version "3.2.1"
   resolved "https://registry.yarnpkg.com/ansi-styles/-/ansi-styles-3.2.1.tgz#41fbb20243e50b12be0f04b8dedbf07520ce841d"
@@ -2629,8 +2634,7 @@ css-color-names@^1.0.1:
   integrity sha512-/loXYOch1qU1biStIFsHH8SxTmOseh1IJqFvy8IujXOm1h+QjUdDhkzOrR5HG8K8mlxREj0yfi8ewCHx0eMxzA==
 
 "css-dep@link:./packages/playground/css/css-dep":
-  version "0.0.0"
-  uid ""
+  version "1.0.0"
 
 css-parse@~2.0.0:
   version "2.0.0"
@@ -2813,19 +2817,19 @@ denque@^1.1.0:
 
 "dep-esbuild-plugin-transform@link:./packages/playground/optimize-deps/dep-esbuild-plugin-transform":
   version "0.0.0"
-  uid ""
 
 "dep-import-type@link:./packages/playground/ssr-vue/dep-import-type":
   version "0.0.0"
-  uid ""
 
 "dep-linked-include@link:./packages/playground/optimize-deps/dep-linked-include":
   version "0.0.0"
-  uid ""
+  dependencies:
+    react "17.0.0"
 
 "dep-linked@link:./packages/playground/optimize-deps/dep-linked":
   version "0.0.0"
-  uid ""
+  dependencies:
+    lodash-es "^4.17.20"
 
 depd@~1.1.2:
   version "1.1.2"
@@ -5494,8 +5498,9 @@ neo-async@^2.6.0:
   integrity sha512-Yd3UES5mWCSqR+qNT93S3UoYUkqAZ9lLg8a7g9rimsWmYGK8cVToA4/sF3RrshdyV3sAGMXVUmpMYOw+dLpOuw==
 
 "nested-exclude@link:./packages/playground/optimize-deps/nested-exclude":
-  version "0.0.0"
-  uid ""
+  version "1.0.0"
+  dependencies:
+    nested-include "file:./packages/playground/optimize-deps/nested-exclude/nested-include"
 
 "nested-include@file:./packages/playground/optimize-deps/nested-exclude/nested-include":
   version "1.0.0"
@@ -6585,16 +6590,13 @@ reserved-words@^0.1.2:
   integrity sha1-AKCUD5jNUBrqqsMWQR2a3FKzGrE=
 
 "resolve-browser-field@link:./packages/playground/resolve/browser-field":
-  version "0.0.0"
-  uid ""
+  version "1.0.0"
 
 "resolve-custom-condition@link:./packages/playground/resolve/custom-condition":
-  version "0.0.0"
-  uid ""
+  version "1.0.0"
 
 "resolve-custom-main-field@link:./packages/playground/resolve/custom-main-field":
-  version "0.0.0"
-  uid ""
+  version "1.0.0"
 
 resolve-cwd@^3.0.0:
   version "3.0.0"
@@ -6604,12 +6606,10 @@ resolve-cwd@^3.0.0:
     resolve-from "^5.0.0"
 
 "resolve-exports-env@link:./packages/playground/resolve/exports-env":
-  version "0.0.0"
-  uid ""
+  version "1.0.0"
 
 "resolve-exports-path@link:./packages/playground/resolve/exports-path":
-  version "0.0.0"
-  uid ""
+  version "1.0.0"
 
 resolve-from@^4.0.0:
   version "4.0.0"
@@ -7180,6 +7180,13 @@ strip-ansi@^6.0.0:
   dependencies:
     ansi-regex "^5.0.0"
 
+strip-ansi@^7.0.1:
+  version "7.0.1"
+  resolved "https://registry.yarnpkg.com/strip-ansi/-/strip-ansi-7.0.1.tgz#61740a08ce36b61e50e65653f07060d000975fb2"
+  integrity sha512-cXNxvT8dFNRVfhVME3JAe98mkXDYN2O1l7jmcwMnOslDeESg1rF/OZMtK0nRAhiari1unG5cD4jG3rapUAkLbw==
+  dependencies:
+    ansi-regex "^6.0.1"
+
 strip-bom-string@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/strip-bom-string/-/strip-bom-string-1.0.0.tgz#e5211e9224369fbb81d633a2f00044dc8cedad92"
@@ -7375,24 +7382,21 @@ test-exclude@^6.0.0:
     minimatch "^3.0.4"
 
 "test-package-a@link:./packages/playground/nested-deps/test-package-a":
-  version "0.0.0"
-  uid ""
+  version "2.0.0"
 
 "test-package-b@link:./packages/playground/nested-deps/test-package-b":
-  version "0.0.0"
-  uid ""
+  version "1.0.0"
 
 "test-package-c@link:./packages/playground/nested-deps/test-package-c":
-  version "0.0.0"
-  uid ""
+  version "1.0.0"
 
 "test-package-d-nested@link:./packages/playground/nested-deps/test-package-d/test-package-d-nested":
-  version "0.0.0"
-  uid ""
+  version "1.0.0"
 
 "test-package-d@link:./packages/playground/nested-deps/test-package-d":
-  version "0.0.0"
-  uid ""
+  version "1.0.0"
+  dependencies:
+    test-package-d-nested "link:./packages/playground/nested-deps/test-package-d/test-package-d-nested"
 
 text-extensions@^1.0.0:
   version "1.9.0"
@@ -7648,7 +7652,6 @@ typedarray-to-buffer@^3.1.5:
 
 "types@link:./packages/vite/types":
   version "0.0.0"
-  uid ""
 
 typescript@^4.3.4:
   version "4.4.2"
